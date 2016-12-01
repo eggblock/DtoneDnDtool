@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.wilddog.com/sdk/js/2.3.8/wilddog.js"></script>
+  <title>龙与地下城，游戏小工具by 弹头</title>
+
+</head>
+<body>
+<div id="container"></div>
+</body>
+<script type="text/javascript">
+var _VERSION_ = '0.0.1';
+var dtoneObj = {
+  init: 0,
+  count: 0,
+  login:{
+    status:false
+  }
+};
+var config = {
+  syncURL: "https://marisa.wilddogio.com",
+  authDomain: "marisa.wilddog.com"
+};
+wilddog.initializeApp(config);
+var ref = wilddog.sync().ref();
+</script>
+<script src="./build.js" charset="utf-8"></script>
+</html>

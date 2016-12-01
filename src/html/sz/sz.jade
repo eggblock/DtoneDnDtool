@@ -1,0 +1,56 @@
+#info
+  p
+  |  说明：工具陆续开发中，根据游戏时需求进度未知
+  |  版本：v0.0.1
+  a(href='/sz_intro.html',target='_blank') 骰子规则
+h2 龙与地下城标准骰子模拟器
+h3 骰子类型
+ul#sz-list
+    li
+      .item
+        a.btn.sz-btn(type='1',data='4') 1d4
+    li
+      .item
+        a.btn.sz-btn(type='1',data='6') 1d6
+    li
+      .item
+        a.btn.sz-btn(type='1',data='8') 1d8
+    li
+      .item
+        a.btn.sz-btn(type='1',data='10') 1d10
+    li
+      .item
+        a.btn.sz-btn(type='1',data='12') 1d12
+    li
+      .item
+        a.btn.sz-btn(type='1',data='20') 1d20
+    li
+      .item
+        a.btn.sz-btn(type='1',data='100') 1d100
+    br
+    li
+      .item.diy-item
+        div.diy-bg.w30 1D
+        input.sz-diy-ipt.w50(placeholder='骰子',maxlength='3')
+        a.sz-btn.btn.sz-diy-btn(type='2') 投掷
+    //br
+    li
+      .item.diy-item.diy-item-2
+        input.sz-diy-ipt.w50.d-ipt(placeholder='次数',maxlength='2')
+        div.diy-bg.w20 D
+        input.sz-diy-ipt.w50.v-ipt(placeholder='骰子',maxlength='3')
+        div#sz-math.diy-bg.w20 -
+        input.sz-diy-ipt.w50.adj-ipt(placeholder='调整',maxlength='3',rule='1',value='')
+        a.btn.sz-btn.sz-diy-btn(type='3') 高级投掷
+    br
+#sz-screen
+    h3 骰子显示队列
+        span#sz-clear.btn （清空数据）
+    span 欧气程度：
+    span.clv-0 黑
+    span.clv-1 非
+    span.clv-2 亚
+    span.clv-3 白
+    span.clv-4 欧
+    ul#sz-result-list
+      li 暂无投掷结果
