@@ -1,6 +1,6 @@
 import $ from 'jquery'
 import './sz/sz.js'
-import './prototype/pr.js'
+//import './prototype/pr.js'
 import './style.styl'
 import html from './index.jade'
 import './stylus/poabar.styl'
